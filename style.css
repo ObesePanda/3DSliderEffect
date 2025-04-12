@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Negro con 50% de opacidad */
-  z-index: 1;
+  z-index: 0;
 }
 
 .banner .slider {
@@ -31,15 +31,15 @@
   left: calc(50% - 100px);
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  animation: autoRun 20s linear infinite;
+  animation: autoRun 10s linear infinite;
   z-index: 1;
 }
 @keyframes autoRun {
   from {
-    transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-15deg) rotateY(0deg);
   }
   to {
-    transform: perspective(1000px) rotateX(-20deg) rotateY(360deg);
+    transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
   }
 }
 
@@ -71,7 +71,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  z-index: 1;
 }
 .banner .content .price h3 {
   position: absolute;
